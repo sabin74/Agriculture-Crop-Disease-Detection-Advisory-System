@@ -13,6 +13,7 @@ app.use(express.json());
 
 //routes
 app.use('/api/auth',require('./routes/auth'));
+app.use('/api/images',require('./routes/images'));
 
 app.get('/',(req,res)=>{
   res.send({message: 'Hello World!'});
