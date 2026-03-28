@@ -1,0 +1,11 @@
+{
+    "validation_loss": 0.17304843664169312,
+    "validation_accuracy": 0.961876392364502,
+    "validation_f1_score": 0.9619361758232117,
+    "training_accuracy": 0.9801949858665466,
+    "overfitting_gap": 0.018318593502044678,
+    "total_epochs": 40,
+    "best_epoch": 30,
+    "best_validation_loss": 0.1732930988073349,
+    "best_validation_accuracy": 0.9653114676475525
+}

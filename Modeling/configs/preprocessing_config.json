@@ -1,0 +1,62 @@
+{
+    "paths": {
+        "train_dir": "Modeling/Crop Disease Dataset/train",
+        "val_dir": "Modeling/Crop Disease Dataset/valid",
+        "test_dir": "Modeling/Crop Disease Dataset/test",
+        "config_dir": "Modeling/configs",
+        "viz_dir": "Modeling/reports/visualizations/preprocessing"
+    },
+    "image_parameters": {
+        "image_size": [
+            224,
+            224
+        ],
+        "batch_size": 32,
+        "color_mode": "rgb",
+        "normalization": "1./255"
+    },
+    "dataset_info": {
+        "num_classes": 45,
+        "train_samples": 74880,
+        "val_samples": 19804,
+        "steps_per_epoch": 2340,
+        "validation_steps": 618
+    },
+    "augmentation": {
+        "standard": {
+            "rotation_range": 20,
+            "width_shift_range": 0.1,
+            "height_shift_range": 0.1,
+            "zoom_range": 0.1,
+            "horizontal_flip": true,
+            "brightness_range": [
+                0.9,
+                1.1
+            ]
+        },
+        "strong": {
+            "rotation_range": 40,
+            "width_shift_range": 0.2,
+            "height_shift_range": 0.2,
+            "zoom_range": 0.2,
+            "horizontal_flip": true,
+            "vertical_flip": true,
+            "brightness_range": [
+                0.8,
+                1.2
+            ],
+            "shear_range": 0.2
+        }
+    },
+    "class_info": {
+        "total_classes": 45,
+        "class_indices_file": "class_indices.json",
+        "class_names_file": "class_names.json",
+        "class_weights_file": "class_weights.json"
+    },
+    "metadata": {
+        "created": "2026-01-28T07:55:29.954532",
+        "tensorflow_version": "2.19.0",
+        "keras_version": "3.10.0"
+    }
+}

@@ -1,0 +1,46 @@
+
+CROP DISEASE DETECTION MODEL EVALUATION REPORT
+==================================================
+
+EVALUATION SUMMARY:
+• Overall Accuracy: 96.18%
+• Weighted F1-Score: 0.9607
+• Macro F1-Score: 0.9516
+• Error Rate: 3.82%
+
+DATASET INFORMATION:
+• Total Validation Images: 19,776
+• Correct Predictions: 19,021
+• Incorrect Predictions: 755
+• Number of Classes: 45
+
+CLASS PERFORMANCE RANGE:
+• Best Class Accuracy: 100.00%
+• Worst Class Accuracy: 45.81%
+• Average Class Accuracy: 95.63%
+
+TOP 5 PERFORMING CLASSES:
+  • Sugarcane__RedRust: 100.00%
+  • Orange__Haunglongbing_(Citrus_: 100.00%
+  • Grape__healthy: 100.00%
+  • Grape__Leaf_blight_(Isariopsis: 100.00%
+  • Strawberry__healthy: 100.00%
+
+BOTTOM 5 PERFORMING CLASSES:
+  • Coffee__NoRust: 45.81%
+  • Sugarcane__Mosaic: 80.30%
+  • Sugarcane__healthy: 85.11%
+  • Sugarcane__Yellow_Rust: 85.27%
+  • Tomato__Spider_mites Two-spott: 86.90%
+
+MODEL ASSESSMENT:
+• ROC AUC (Micro-average): 0.9993
+• ROC AUC (Macro-average): 0.9992
+• Model seems to generalize well
+
+RECOMMENDATIONS:
+1. Address class imbalance
+2. Data augmentation is sufficient
+3. Consider fine-tuning on problematic classes
+
+Evaluation completed on: 2026-01-30 06:10:21

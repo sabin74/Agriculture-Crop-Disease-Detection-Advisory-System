@@ -1,0 +1,49 @@
+augmentation:
+  standard:
+    brightness_range:
+    - 0.9
+    - 1.1
+    height_shift_range: 0.1
+    horizontal_flip: true
+    rotation_range: 20
+    width_shift_range: 0.1
+    zoom_range: 0.1
+  strong:
+    brightness_range:
+    - 0.8
+    - 1.2
+    height_shift_range: 0.2
+    horizontal_flip: true
+    rotation_range: 40
+    shear_range: 0.2
+    vertical_flip: true
+    width_shift_range: 0.2
+    zoom_range: 0.2
+class_info:
+  class_indices_file: class_indices.json
+  class_names_file: class_names.json
+  class_weights_file: class_weights.json
+  total_classes: 45
+dataset_info:
+  num_classes: 45
+  steps_per_epoch: 2340
+  train_samples: 74880
+  val_samples: 19804
+  validation_steps: 618
+image_parameters:
+  batch_size: 32
+  color_mode: rgb
+  image_size: !!python/tuple
+  - 224
+  - 224
+  normalization: 1./255
+metadata:
+  created: '2026-01-28T07:55:29.954532'
+  keras_version: 3.10.0
+  tensorflow_version: 2.19.0
+paths:
+  config_dir: Modeling/configs
+  test_dir: Modeling/Crop Disease Dataset/test
+  train_dir: Modeling/Crop Disease Dataset/train
+  val_dir: Modeling/Crop Disease Dataset/valid
+  viz_dir: Modeling/reports/visualizations/preprocessing

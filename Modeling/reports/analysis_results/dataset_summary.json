@@ -1,0 +1,27 @@
+{
+    "dataset_info": {
+        "total_classes": 45,
+        "total_images": 70780,
+        "healthy_classes": 11,
+        "diseased_classes": 34
+    },
+    "image_statistics": {
+        "min_images_per_class": 75,
+        "max_images_per_class": 3296,
+        "avg_images_per_class": 1572.888888888889,
+        "median_images_per_class": 1824.0,
+        "std_images_per_class": 643.7442752515876,
+        "imbalance_ratio": 43.946666666666665
+    },
+    "quality_issues": {
+        "train_corrupted": 0,
+        "train_empty_folders": 0,
+        "val_corrupted": 0,
+        "val_empty_folders": 0
+    },
+    "split_consistency": {
+        "classes_missing_in_val": 0,
+        "classes_extra_in_val": 0,
+        "val_train_ratio": 0.2605397004803617
+    }
+}
